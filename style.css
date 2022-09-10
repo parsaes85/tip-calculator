@@ -1,0 +1,195 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+body{
+    background-color: hsl(185, 41%, 84%);
+}
+body > img{
+    margin: 0px auto;
+    display: block;
+    width: 70px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.app{
+    background-color: white;
+    width: 800px;
+    margin: 0px auto;
+    display: flex;
+    padding: 25px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.right-side{
+    background-color: hsl(183, 100%, 15%);
+    width: 50%;
+    padding: 30px;
+    border-radius: 15px;
+}
+.tip-amount,.total{
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    color: hsl(172, 67%, 45%);
+    font-size: 2.5em;
+}
+.text{
+    font-size: .7em;
+    margin-top: 10px;
+}
+.first-p{
+    color: hsl(189, 41%, 97%);
+}
+.second-p{
+    color: hsl(184, 14%, 56%);
+}
+.reset-btn{
+    width: 100%;
+    margin-top: 110px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border: none;
+    font-size: 16px;
+}
+.reset-btn:hover{
+    background-color: hsl(185, 41%, 84%);
+}
+.bill-form{
+    position: relative;
+}
+.bill-form label{
+    display: block;
+    color: hsl(186, 14%, 43%);
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.bill-form img{
+    position: absolute;
+    top: 31px;
+    left: 15px;
+}
+#bill-input{
+    direction: rtl;
+    padding: 0px 20px;
+    background-color: hsl(189, 41%, 95%);
+    border: none;
+    height: 37px;
+    width: 95%;
+    color: hsl(183, 100%, 15%);
+    font-size: 18px;
+}
+.select-tip-part{
+    margin: 20px 0px;
+}
+.select-tip-part p{
+    display: block;
+    color: hsl(186, 14%, 43%);
+    font-size: 13px;
+}
+.btns{
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    margin-top: 10px;
+}
+.btns button , input{
+    width: 90px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.btns button{
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(189, 41%, 97%);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.btns button:focus{
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+}
+.btns button:hover{
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+.btns input{
+    direction: rtl;
+    padding-right: 13px;
+    background-color: hsl(189, 41%, 95%);
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    color: hsl(183, 100%, 15%);
+}
+.people-number-input{
+    position: relative;
+}
+.people-number-input label{
+    display: block;
+    color: hsl(186, 14%, 43%);
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+.people-number-input img{
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+}
+#people-number-input{
+    direction: rtl;
+    padding: 0px 20px;
+    background-color: hsl(189, 41%, 95%);
+    border: none;
+    height: 37px;
+    width: 96%;
+    color: hsl(183, 100%, 15%);
+    font-size: 18px;
+}
+.people-number-input p{
+    font-size: 12px;
+    float: right;
+    margin-right: 20px;
+    color: rgb(235, 78, 78);
+}
+input:focus{
+    outline: 2px solid hsl(172, 67%, 45%);
+}
+.invalid{
+    outline: 1px solid rgb(235, 78, 78);
+}
+.invalid:focus{
+    outline: 1px solid rgb(235, 78, 78);
+}
+
+@media only screen and (max-width:796px){
+    body > img{
+        margin: 40px auto 30px;
+    }
+    .app{
+        flex-direction: column;
+        width: 350px;
+    }
+    .right-side{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .calculate-btn{
+        margin-top: 40px;
+    }
+    .btns button , input{
+        width: 130px;
+        height: 40px;
+        margin-bottom: 12px;
+        margin-right: 20px;
+    }
+    .btns input{
+        padding-right: 30px;
+    }
+}
